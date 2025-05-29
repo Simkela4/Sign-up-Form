@@ -15,7 +15,69 @@
                 <div class="logo">ODIN</div>
             </div>
         </div>
-        <div class = "form"></div>
+        <div class = "form">
+            <div class="first">
+                <div class="text-block">
+                  This is not a real online service! You know you need something<br>
+                  like this in your life to help you realize your deepest dreams.<br>
+                  Sign up <span>now</span> to get started.<br><br>
+                  You <span>know</span> you want to.
+                </div>
+              </div>
+            <div class="second">
+                <div class="form-container">
+                    <h2>Let's do this!</h2>
+                    <form action="/submit" method="POST">
+                
+                      <div class="row">
+                        <div class="column">
+                          <label for="firstName">First Name</label>
+                          <input type="text" id="firstName" name="firstName" placeholder="Thor" required>
+                        </div>
+                
+                        <div class="column">
+                          <label for="lastName">Last Name</label>
+                          <input type="text" id="lastName" name="lastName" placeholder="Odinson" required>
+                        </div>
+                      </div>
+                
+                      <div class="row">
+                        <div class="column">
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" required>
+                        </div>
+                
+                        <div class="column">
+                          <label for="phone">Phone</label>
+                          <input type="tel" id="phone" name="phone" required pattern="[0-9+()\- ]+">
+                        </div>
+                      </div>
+                
+                      <div class="row">
+                        <div class="column">
+                          <label for="password">Password</label>
+                          <input type="password" id="password" name="password" required
+                                 pattern=".{6,}" title="Password must be at least 6 characters">
+                        </div>
+                
+                        <div class="column">
+                          <label for="confirmPassword">Confirm Password</label>
+                          <input type="password" id="confirmPassword" name="confirmPassword" required
+                                 pattern=".{6,}" title="Password must be at least 6 characters">
+                        </div>
+                      </div>
+                
+                      
+                    </form>
+                  </div>
+                
+            </div>
+            <div class="third">
+
+                <button type="submit">Create Account</button>
+                <div>Already have an account> <a href="https://example.com">Log in</a></div>
+            </div>
+        </div>
     </div>  
       
       
