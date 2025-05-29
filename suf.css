@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'Norse-Bold'; /* ← koristi ovo ime! */
+    src: url('fonts/norse-bold-webfont.woff2') format('woff2'),
+         url('fonts/norse-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,body{
+    margin:0;
+    height: 100%;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+.picture{
+    flex: 1;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 30%; 
+    left: 0;
+    width: 100%;     
+    height: 120px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20 px;
+    z-index: 10;
+    overflow: hidden;
+}
+
+
+.logo {
+    font-family: 'Norse-Bold', sans-serif;
+    color: white;
+    font-size: 2.5rem;
+    letter-spacing: 3px;
+    user-select: none;
+}
+.form{
+    flex: 2;
+}
+
+.picture img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.odin {
+    height: 80% !important;    
+    width: auto !important;
+    max-width: 100% !important;
+    object-fit: contain !important;
+    display: block;
+}
